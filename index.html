@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking System</title>
+    <link rel="stylesheet" href="./CSS.css">
+</head>
+<body>
+    <header>
+        <h1>Doctor Appointment Booking System</h1>
+    </header>
+
+    <main>
+        <section id="search-doctor">
+            <h2>Search for Doctors</h2>
+            <form id="search-form">
+                <label for="specialty">Specialty:</label>
+                <input type="text" id="specialty" name="specialty" placeholder="e.g., Cardiologist">
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="e.g., New York">
+
+                <label for="availability">Availability:</label>
+                <input type="date" id="availability" name="availability">
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="doctor-list">
+            <h2>Doctors List</h2>
+            <ul id="doctors"></ul>
+        </section>
+
+        <section id="doctor-profile" style="display: none;">
+            <h2>Doctor Profile</h2>
+            <div id="profile-details"></div>
+            <button id="book-appointment-btn">Book Appointment</button>
+        </section>
+
+        <section id="appointment-booking" style="display: none;">
+            <h2>Book an Appointment</h2>
+            <form id="booking-form">
+                <label for="appointment-time">Select Time:</label>
+                <input type="time" id="appointment-time" name="appointment-time">
+                <button type="submit">Confirm Appointment</button>
+            </form>
+        </section>
+
+        <section id="manage-appointments">
+            <h2>Manage Appointments</h2>
+            <ul id="appointments-list"></ul>
+        </section>
+    </main>
+
+    <script src="./Js.js"></script>
+</body>
+</html>
